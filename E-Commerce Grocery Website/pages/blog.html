@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bardan,Paurakh,Aaseaan">
+    <meta name="description" content="Fresh produce, pantry staples, and more. Shop now for convenient online grocery service.">
+    <title>Blog </title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+  
+      /* General styles*/
+      body {
+        font-family: 'Roboto';
+        font-size: 16px;
+      }
+  
+      .header-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+  
+      .grid {
+        gap: 20px;
+      }
+  
+      .column {
+        padding: 20px;
+        width: 65%;
+        margin-left: 36vh;
+      }
+  
+      /* Hero section */
+  
+      .header {
+        background-color: #F8F9FA;
+      }
+  
+      .main-hero {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 34px;
+        padding: 70px 0;
+        width: 100%;
+        
+      }
+  
+      .hero-content {
+        max-width: 400px;
+      }
+  
+      .title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .subtitle {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+  
+      .date {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.58);
+      }
+  
+      .hero-image img {
+        width: 80%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 5px 8px 48px 0px rgba(0, 0, 0, 0.2);
+      }
+  
+      /* Content section */
+      .content {
+        padding: 50px 0;
+      }
+  
+      .heading {
+        font-weight: 700;
+        font-size: 32px;
+        text-decoration: underline;
+        text-decoration-color: #06aed2;
+        margin-bottom: 42px;
+      }
+  
+      .heading:hover {
+        text-decoration-color: #40d206;
+      }
+  
+      .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+  
+      .section-text {
+        line-height: 26px;
+        letter-spacing: -0.03em;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+  
+      .section-image {
+        width: 100%;
+        margin: 24px 0;
+        border-radius: 8px;
+      }
+  
+      /* Responsive styles */
+      @media (max-width: 992px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .main-hero {
+          flex-direction: column;
+        }
+  
+        .header-container {
+          width: 95%;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .main-hero {
+          padding: 0;
+        }
+        .section-text {
+          padding: 0;
+        }
+      }
+      .footer{
+        font-family: "roboto";
+      }
+    </style>
+  </head>
+
+<body>
+  <div class="container">
+      <!-- Header Section hero -->
+      <header class="hero">
+          <!-- Nav Bar -->
+          <nav>
+              <!-- Website Logo -->
+              <img src="/images/gobazzar-logo.png" alt="website logo" width="180px" style="border-radius:10px;">
+              <ul style="margin-top: 10px;">
+                  <!-- All Navigate Links -->
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Products.html">Products</a></li>
+                  <li><a href="aboutus.html">About</a></li>
+                  <li><a href="research.html">Research</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+  </div>
+  <hr>
+  <section class="header">
+    <div class="header-container">
+        <!-- Main Hero Section -->
+        <div class="main-hero">
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <!-- Title for blog-->
+            <h1 class="title">Blog ✍</h1>
+            <!-- Subtitle for blog-->
+            <h2 class="subtitle">
+              🍉 STOCK UP ON GOODNESS, SHOP WITH US TODAY!
+            </h2>
+            <!-- Date -->
+            <p class="date">Date: 2024 May 3</p>
+         </div>
+          <!-- Image of blog-->
+        <div class="hero-image">
+            <img
+              src="/images/blogimage.jpeg"
+              alt="Sesearch Image"
+            />
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <section class="content">
+      <div class="container">
+        <!--Columns -->
+        <div class="grid">
+          
+          <!-- Protein Section -->
+          <div class="column">
+            <h3 class="heading">The Future of Grocery Shopping: Embracing Technology and Its Impacts</h3>
+            <!--  Title of protein -->
+            <h4 class="section-title">Protein 🍗</h4>
+            <!-- Text Content of protein-->
+            <p class="section-text">
+              Protein is a necessary nutrient that the body uses for many vital
+              processes. First of all, it is essential for the development and
+              repair of tissues. Our bodies convert protein into amino acids
+              when we eat foods high in protein, like meat, fish, poultry, eggs,
+              legumes, dairy products, nuts, and seeds; the building blocks of
+              tissues, such as muscles, bone, skin, hair, and nails, are the
+              amino acids. Furthermore, because proteins are the building blocks
+              of antibodies and immune cells, proteins are essential for
+              maintaining immunological function. Moreover, synthesizing
+              hormones and enzymes controls several biological functions like
+              growth, digestion, and metabolism.
+            </p>
+            <!-- Image of protein-->
+            <img
+              src="/images/proteinimage.jpeg"
+              alt="Protein Image"
+              class="section-image"
+            />
+          </div>
+          
+          <!-- Carbohydrates Section -->
+          <div class="column">
+            <!-- Title of carbohydrates -->
+            <h4 class="section-title">Carbohydrates 🥜</h4>
+            <!-- Text Content of carbohydrates -->
+            <p class="section-text">
+              Our bodies use carbohydrates as their primary energy source to
+              power our daily activities and sustain us. Because glucose, a
+              byproduct of the digestion of carbohydrates, is what the brain
+              uses as energy, they are vital to brain function. Carbohydrates
+              provide energy for physical activities and help regulate blood
+              sugar levels, preventing energy crashes and mood swings. Food high
+              in carbohydrates also has fiber, suitable for the digestive
+              system, and may help reduce the chance of developing certain
+              illnesses.
+            </p>
+            <!-- Image for carbohydrates-->
+            <img
+              src="/images/carbsimage.jpeg"
+              alt="Carbohydrate Image"
+              class="section-image"
+            />
+          </div>
+          
+          <!-- Fruits Section -->
+          <div class="column">
+            <!-- Title of fruits -->
+            <h4 class="section-title">Fruits 🍎</h4>
+            <!-- Text for fruits -->
+            <p class="section-text">
+              Fruits, with their myriad health benefits, should be a staple in
+              any healthy diet. They are excellent sources of vital nutrients
+              that uphold various bodily functions and overall well-being. These
+              include vitamin C, potassium, and a variety of antioxidants. For
+              example, potassium aids in blood pressure regulation and muscular
+              function, while vitamin C is crucial for the immune system, wound
+              healing, and collagen synthesis. The antioxidants in fruits
+              protect cells from the aging and disease-causing effects of free
+              radicals. Fruits are an excellent source of dietary fiber, which
+              promotes the growth of beneficial gut bacteria, aids in bowel
+              movement control, and prevents constipation. This can enhance
+              overall digestive health and reduce the risk of specific digestive
+              diseases such as diverticulosis and hemorrhoids.
+            </p>
+            <!-- Image for fruits-->
+            <img
+              src="/images/fruits.jpg"
+              alt="Fruits Image"
+              class="section-image"
+            />
+          </div>
+          
+          <!--Positive Impacts Section -->
+          <div class="column">
+            <!-- Title of positive impact -->
+            <h4 class="section-title">Positive Impacts ✨</h4>
+            <!-- Text of positive impact -->
+            <p class="section-text">
+              The grocery industry has seen a significant transformation due to
+              the Internet, affecting all aspects of the business. First, online
+              grocery shopping has fueled the expansion of eCommerce by enabling
+              customers to shop for groceries from the comfort of their homes.
+              Customer's acceptance of the product is now significantly
+              influenced by this additional convenience. Additionally, grocery
+              businesses may now reach a wider audience online than they could
+              in person, creating new opportunities for growth and customer
+              interaction. Online platforms also collect enormous amounts of
+              data about customer preferences and behaviors, which gives
+              merchants important insights for streamlining their business
+              processes and advertising campaigns. Retailers must find creative
+              ways to address these new difficulties, like logistics and
+              maintaining product freshness, to navigate the digital shift
+              successfully.
+            </p>
+            <!-- Image for positive impact -->
+            <img
+              src="/images/positiveimpact.jpg"
+              alt="Positive Impacts Image"
+              class="section-image"
+            />
+          </div>
+          
+          <!-- Negative Impacts Section -->
+          <div class="column">
+            <!-- Title for positive impact-->
+            <h4 class="section-title">Negative Impacts 📉</h4>
+            <!-- Text of positive impact-->
+            <p class="section-text">
+              The grocery industry has significantly benefited from the
+              Internet, but there have also been some drawbacks. The possible
+              loss of interpersonal relationships and community involvement that
+              traditional grocery shopping promotes is one major cause for
+              concern. Online shoppers lose the chance to speak with store
+              employees, get advice, and start conversations with other
+              customers on the spur of the moment. This may cause someone to
+              feel distant and alone, particularly if they enjoy the social
+              aspects of shopping. Online grocery delivery also has
+              environmental implications, such as increased packaging waste and
+              transportation-related carbon emissions. Reliance on delivery
+              services can exacerbate environmental problems by adding to city
+              traffic and pollution. Concerns around data security and privacy
+              are also present.
+            </p>
+            <!-- Image of negative impact -->
+            <img
+              src="/images/negativeimpact.jpg"
+              alt="Negative Impacts Image"
+              class="section-image"
+            />
+          </div>
+          
+          <!-- Overall Section -->
+          <div class="column">
+            <!--Title for overall -->
+            <h4 class="section-title">Overall</h4>
+            <!-- Text for overall-->
+            <p class="section-text">
+              Technology has significantly altered how foods are purchased,
+              sold, and consumed. Its effects on daily living and commerce in
+              the grocery industry are extensive and diverse. Technology has
+              made purchasing more efficient and convenient than ever before.
+              However, it has also brought up significant ethical, social, and
+              economic issues that must be carefully considered and addressed.
+            </p>
+            <!-- Image of overall -->
+            <img
+              src="/images/overall.jpg"
+              alt="Overall Image"
+              class="section-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- footer section-->
+<footer>
+  <!-- Footer row  -->
+  <div class="footer-row">
+      <!-- Column for navlinks -->
+      <div class="footer-column">
+          <h4>Navigate</h4>
+          <!-- List of ul nav links -->
+          <ul> 
+              <li>
+              <!-- Navi link for Products -->
+              <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <!-- Navi link for Products -->
+                  <a href="Products.html">Products</a>
+              </li>
+              <li>
+                  <!-- Nav link for About us -->
+                  <a href="aboutus.html">About us</a>
+              </li>
+              <li>
+                  <!-- Nav link for Research -->
+                  <a href="research.html">Research</a>
+              </li>
+              <li>
+                  <!-- Nav link for Blog -->
+                  <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                  <!-- Nav link for Contact Us -->
+                  <a href="contact.html">Contact Us</a>
+              </li>
+          </ul>
+      </div>
+
+      <!-- Column  social media links -->
+      <div class="footer-column">
+          <h4>Follow us on</h4>
+          <!-- List of ul social media icons -->
+          <ul class="social-icons">
+              <li>
+                  <!--  link for Facebook -->
+                  <a href="https://www.facebook.com/">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+              </li>
+              <li>
+                  <!--  link for Instagram -->
+                  <a href="https://www.instagram.com/accounts/login/">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+              </li>
+              <li>
+                  <!-- link for Youtube -->
+                  <a href="https://www.youtube.com/">
+                      <i class="fa-brands fa-youtube"></i>
+                  </a>
+              </li>
+              <li>
+                  <!--  link for LinkedIn -->
+                  <a href="https://www.linkedin.com/">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+
+      <!-- Column for company information -->
+      <div class="footer-column">
+          <!-- Title for company information -->
+          <h4>About Us</h4>
+          <!-- Description about the company -->
+          <p>Welcome to Go Bazzar, your fun, inexpensive, and handy grocery store. We streamline your shopping experience by providing a large selection of fresh vegetables, pantry essentials, and specialized items.</p>
+      </div>
+  </div>
+  <hr>
+  <!-- Copyright notice tag -->
+  <p class="copyright-info">© 2024 Go Bazzar. All rights reserved</p>
+</footer>
+</body>
+</html>

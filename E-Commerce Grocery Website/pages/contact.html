@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bardan,Paurakh,Aaseaan">
+    <meta name="description" content="Fresh produce, pantry staples, and more. Shop now for convenient online grocery service.">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="/images/logos.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+        /* importing fonts from google fonts*/
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        /* This style implies to whole webpage*/
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        } 
+        body{
+            background: url('/images/pexels-markusspiske-1679719.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: whitesmoke;
+            font-family: 'Roboto';
+        }
+        nav ul li a{
+            color: rgb(206, 205, 205);
+        }
+        /* Styles for the header body */
+        .head-body {
+            margin: auto;
+            max-width: 30%;
+            border: solid 1px #BFBFBF;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0.5rem;
+            color: black;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+    
+        strong{
+            font-size: 14px;
+            font-weight: 500!important;
+            padding-left: 34px;
+        }
+        /* Styles for the heading */
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 30px; 
+            padding: 20px 0px;
+            background-color: #00000005;
+        }
+        /* Styles for text, email, and number inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {    
+            display: block;
+            margin: 10px auto;
+            width: 85%;
+            color: #56647E;
+            height: 4vh;
+            max-height: 42px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            background-color: #f7f8fa;
+            padding: 0px 0px 0px 8px;
+            font-weight: 300;
+            letter-spacing: 0.1px;
+            font-size: 12px;
+        }
+        /* Styles for the submit button */
+        input[type="submit"] {
+            appearance: none;
+            background-color: #2ea44f;
+            border: 1px solid rgba(27, 31, 35, .15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 6px 16px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            margin: 26px;
+        }
+
+        #contactForm {
+            margin-top: 20px;
+        }
+        /* Styles for the feedback textarea */
+        
+        textarea[name="feedback"] {
+            font-family: inherit;
+            margin-left: 25px;
+            /* padding-right: 150px; */
+            width: 85%;
+            color: black;
+            background-color: #DBD6DF;
+            border-radius: 10px;
+            display: block;
+            color: #56647E;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            background-color: #f7f8fa;
+            padding: 0px 0px 0px 8px;
+            font-weight: 300;
+            letter-spacing: 0.1px;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="hero">
+        <!-- Navigation Bar -->
+        <nav>
+            <!-- Website Logo -->
+            <img src="/images/gobazzar-logo.png" alt="website logo" width="180px" style="border-radius:10px;">
+            <ul style="margin-top: 10px;">
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <hr>
+    <div class="header-container">
+      
+      <div class="head-body">
+            <h1>Contact Us</h1>
+        
+            <!-- Form Section -->
+        <form id="contactForm">
+            <!-- Enter First Name -->
+            <strong>First Name:</strong>
+            <input type="text" id="firstName" placeholder="Please enter your first name">
+            <!-- Enter Last Name -->
+            <strong>Last Name:</strong>
+            <input type="text" id="lastName" placeholder="Please enter your last name">
+            <!-- Input Email -->
+            <strong>Email:</strong>
+            <input type="email" id="email" placeholder="Please enter your email">     
+            <!-- Enter Phone Number -->
+            <strong>Ph number:</strong>
+            <input type="number" id="phone" placeholder="Please enter your Phone number">
+            <!-- Select your Gender -->
+            <strong>Gender:</strong>
+            <input type="radio" name="Gender" value="male" checked> Male
+            <input type="radio" name="Gender" value="female"> Female
+            <br> <br>
+            <!-- text area for feedback -->
+            <textarea name="feedback" id="mensaje" cols="30" rows="10" placeholder="Leave a note for us"></textarea>
+            <!-- Submit Button for form-->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- Footer section -->
+ <!-- footer section-->
+<footer>
+  <!-- Footer row  -->
+  <div class="footer-row">
+      <!-- Column for navlinks -->
+      <div class="footer-column">
+          <h4>Navigate</h4>
+          <!-- List of ul nav links -->
+          <ul> 
+              <li>
+              <!-- Navi link for Products -->
+              <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <!-- Navi link for Products -->
+                  <a href="Products.html">Products</a>
+              </li>
+              <li>
+                  <!-- Nav link for About us -->
+                  <a href="aboutus.html">About us</a>
+              </li>
+              <li>
+                  <!-- Nav link for Research -->
+                  <a href="research.html">Research</a>
+              </li>
+              <li>
+                  <!-- Nav link for Blog -->
+                  <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                  <!-- Nav link for Contact Us -->
+                  <a href="contact.html">Contact Us</a>
+              </li>
+          </ul>
+      </div>
+
+      <!-- Column  social media links -->
+      <div class="footer-column">
+          <h4>Follow us on</h4>
+          <!-- List of ul social media icons -->
+          <ul class="social-icons">
+              <li>
+                  <!--  link for Facebook -->
+                  <a href="https://www.facebook.com/">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+              </li>
+              <li>
+                  <!--  link for Instagram -->
+                  <a href="https://www.instagram.com/accounts/login/">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+              </li>
+              <li>
+                  <!-- link for Youtube -->
+                  <a href="https://www.youtube.com/">
+                      <i class="fa-brands fa-youtube"></i>
+                  </a>
+              </li>
+              <li>
+                  <!--  link for LinkedIn -->
+                  <a href="https://www.linkedin.com/">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+
+      <!-- Column for company information -->
+      <div class="footer-column">
+          <!-- Title for company information -->
+          <h4>About Us</h4>
+          <!-- Description about the company -->
+          <p>Welcome to Go Bazzar, your fun, inexpensive, and handy grocery store. We streamline your shopping experience by providing a large selection of fresh vegetables, pantry essentials, and specialized items.</p>
+      </div>
+  </div>
+  <hr>
+  <!-- Copyright notice tag -->
+  <p class="copyright-info">© 2024 Go Bazzar. All rights reserved</p>
+</footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Get form values
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var gender = document.querySelector('input[name="Gender"]:checked').value;
+            var feedback = document.getElementById('mensaje').value;
+            
+            // Check if any field is empty if empty then display a message
+            if (firstName.trim() === "" || lastName.trim() === "" || email.trim() === "" || phone.trim() === "" || feedback.trim() === "") {
+                alert("Please enter all the fields");
+                return;
+            }
+            
+            // Display thank you message
+            alert("Thank you " + firstName + " " + lastName + " for submitting!");
+
+        });
+    </script> 
+</body>
+</html>

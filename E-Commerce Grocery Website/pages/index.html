@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bardan,Paurakh,Aaseaan">
+    <meta name="description" content="Fresh produce, pantry staples, and more. Shop now for convenient online grocery service.">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="/images/logos.png" type="image/x-icon">
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Jacquard+12+Charted&family=Jacquard+24&family=Kaushan+Script&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Setting font family */
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: white;
+        }
+
+        /* navbar section style*/
+        .hero {
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Background video style */
+        .back-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        h1{
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+        /* background video Responsive style  */
+        @media (min-aspect-ratio: 16/9) {
+            .back-video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-aspect-ratio: 16/9) {
+            .back-video {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        nav {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: 300;
+            color: rgb(255, 255, 255);
+            filter: drop-shadow(4px 4px 4px #9a9f9f);
+            font-size: 19px;
+        }
+
+        nav ul li a:hover {
+            color: #E5B80B;
+            transition: all 0.3s ease 0s;
+            font-size: 22px;
+        }
+
+        nav ul li a::after {
+            content: "";
+            width: 0%;
+            height: 5px;
+            display: block;
+            transition: all 0.2s ease;
+            bottom: 25%;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+            height: 2px;
+            background-color: #df0000;
+            box-shadow: 10px 5px 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header style */
+        .heads {
+            text-align: center;
+        }
+
+        .heads h1 {
+            font-family: "Poetsen One", sans-serif;
+            background: linear-gradient(to left, #adce00, #b9c9f8); 
+            -webkit-background-clip: text; /* Clip the background to the text */
+            background-clip: text;
+            -webkit-text-fill-color: transparent; /* Hide the text color */
+            color: white;
+            font-size: 60px;
+            font-weight: 600;
+            padding-top: 30vh;
+        }
+
+        .heads p {
+            font-family: "Roboto", sans-serif;
+            color: white;
+            font-size: 21px;
+        }
+        
+        .heads #shop-now {
+
+            background: #0171e2;
+            padding: 19px 27px;
+            margin: 25px 20px 0;
+            border-radius: 90px;
+            font-size: 15px;
+            border: none;
+            transition: 0.5s;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        #shop-now i {
+            margin-left: 10px;
+            transition: all 0.21s;
+            color: rgb(255, 255, 255);
+        }
+
+        #shop-now:hover {
+            border: 1px solid white;
+            background-color: rgb(0, 0, 0);
+            transition: all 0.2s ease;
+            color: white;
+        }
+
+        #shop-now:hover .fa {
+            color: white;
+            transform: translate(10px, 0);
+        }
+
+        /* Styling for the offer section */
+        .offer {
+            font-family: 'roboto';
+            margin-top: 50px;
+            border-radius: 6px; 
+        }
+
+        .offer-col h1 {
+            font-size: 35px;
+        }
+        .offer-col img {
+            padding: 40px;
+        }
+
+        .offer h4 {
+            background:linear-gradient(to right, #272727, #0043ff); /* Define your gradient */
+            -webkit-background-clip: text; /* Clip the background to the text */
+            background-clip: text;
+            -webkit-text-fill-color: transparent; /* Hide the text color */
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: grey;
+        }
+
+        .offer p {
+            color: #555;
+            padding-top: 15px;
+            padding-bottom: 50px;
+        }
+
+        .offer .offer-container {
+            max-width: 1080px; /* Maximum width */
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .offer-row {
+            display: flex; 
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping */
+            justify-content: space-around; 
+        }
+
+        .offer-col {
+            flex-basis: 50%; /* Basis for flex layout */
+            min-width: 300px; 
+        }
+        .offer-col #timer{
+            font-family: "roboto", sans-serif;
+            background:linear-gradient(to right, #525252, #000000); 
+            -webkit-background-clip: text; /* it clips the background to the text */
+            background-clip: text;
+            -webkit-text-fill-color: transparent; /* It hides the text color */
+            margin-bottom: 20px;
+
+        }
+
+       
+        .offer .btn {
+            background: #0171e2;
+            padding: 19px 27px;
+            margin: 25px 20px 0;
+            border-radius: 90px;
+            font-size: 15px;
+            border: none;
+            transition: 0.5s;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        .offer .btn:hover{
+            border: 1px solid white;
+            background-color: rgb(0, 0, 0);
+            transition: all 0.2s ease;
+            color: white;
+        }
+       
+
+        /* offers style ends */
+
+        /* deals products styling */
+        .deals-prod{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .deals-prod h1{
+            
+            padding-bottom: 30px;
+        }
+        .deals-row{
+            display: flex;
+            padding: 1rem;
+            max-width: 1500px;
+            margin-left: 83px;
+        }
+        .deals-col{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            background-color:#fdfdfd;
+            margin: 2px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .deals-col:hover{
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            transition: 0.2s all ease-in-out;
+        }
+        .deals-col img{
+            width: 200px;
+            margin: 10px;
+            transition: all 0.3s linear;
+        }
+        
+        .deals-btn{
+            font-size: 17px;
+            background-color: #0d11f9;
+            color: white;
+            padding: 13px 20px;
+            margin-top: 18px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .deals-btn:hover{
+            background-color: #4eb060;
+        }
+        .deals-col h4{
+            display: flex;
+            justify-content: center;
+        }
+        .deals-col p{
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+        }
+        /* deals ends here */
+
+        /* Main product section */
+        #main-product {
+            font-family: 'Roboto';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 80px auto;
+            max-width: 1080px;
+            border-radius: 20px;
+            padding-top: 30px;
+        }
+
+        .product-heading h3 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+            align-items: center;
+            margin: 40px 0px;
+        }
+
+        .product-box {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .product-box:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            transition: 0.2s all ease-in-out;
+        }
+
+        .product-box img {
+            width: 90%;
+            height: 180px;
+            object-fit: contain;
+            object-position: center;
+            margin: auto;
+        }
+
+        .product-box strong {
+            color: #3a3a3a;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+
+        .product-box #p1 {
+            color: #949494;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .product-box #p2 {
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            color: #393939;
+        }
+        .product-box .cart-btn {
+            font-size: 18px;
+            width: 100%;
+            height: 45px;
+            background-color: #0d11f9;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            transition: all ease 0.3s;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .product-box .cart-btn i {
+            margin-right: 10px;
+        }
+
+        .product-box .cart-btn:hover {
+            background-color: #4eb060;
+            color: #ffffff;
+        }
+        /* main-product styling ends here */
+
+        /* reviews section style */
+        .reviews {
+            padding-top: 70px;
+            padding-bottom: 170px;
+        }
+
+        .review-container h1 {
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        .review-container {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        
+        .reviews .review-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+            margin: 0px -50px;
+        }
+
+        .reviews .review-col {
+            text-align: center;
+            padding: 40px 20px;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .reviews .review-col:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .reviews .review-col img {
+            width: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .review-col p {
+            font-size: 14px;
+            margin-top: 15px;
+            margin-bottom: 28px;
+            color: #777777;
+        }
+
+        .reviews .review-col h3 {
+            font-weight: 600;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .review-col .rating {
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        /* reviews section ends */
+
+        /* Styling the peers container */
+        .partners-part h1{
+            font-family: "Poetsen One", sans-serif;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 65px;
+            font-size: 30px;
+        }
+        .fa-2xl{
+            font-size: 3rem;;
+        }
+        .peers {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1080px; /* Maximum width of the container */
+            margin: auto;
+            padding-bottom: 70px;
+            cursor: pointer;
+        }
+
+        .peers-col h4 {
+            padding-top: 30px;
+            padding-left: 5px;
+            font-size: 14px;
+        }
+
+        .peers a i {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        /* footer starts  */
+        footer {
+            color: #9f9e9e;
+            background-color: #1a1717;
+        }
+
+        .footer-row {
+            display: flex;
+            padding: 5rem;
+            max-width: 1500px;
+           
+        }
+
+
+        .footer-column {
+            width: 500px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 0.9375rem;
+            font-size: 1.5rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-column ul li a {
+            color: #9f9e9e;
+            font-size: 1rem;
+            transition: 0.3s all ease;
+            text-decoration: none;
+        }
+
+        .footer-column ul li a:hover {
+            color: #ff6f6f;
+            transform: translate(0px, -10px);
+        }
+
+        ul.social-icons {
+            display: flex;
+            column-gap: 0.625rem;
+        }
+
+        ul.social-icons li {
+            margin-bottom: 0rem;
+        }
+
+        ul.social-icons li a {
+            display: grid;
+            place-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100%;
+            border: 1.5px solid #6FAAFF;
+            transition: 0.2s all ease-in-out;
+            background: transparent;
+        }
+        ul.social-icons li a .fa-brands {
+            font-size: 1.3rem;
+            transition: color 0.3s;
+        }
+        /* Social icon hover backgrounds by platform - cover whole <a> */
+        ul.social-icons li:nth-child(1) a:hover {
+            background: #1877f3;
+        }
+        ul.social-icons li:nth-child(1) a:hover .fa-facebook-f {
+            color: #fff;
+        }
+        ul.social-icons li:nth-child(2) a:hover {
+            background: #e1306c;
+        }
+        ul.social-icons li:nth-child(2) a:hover .fa-instagram {
+            color: #fff;
+        }
+        ul.social-icons li:nth-child(3) a:hover {
+            background: #181717;
+        }
+        ul.social-icons li:nth-child(3) a:hover .fa-github {
+            color: #fff;
+        }
+        ul.social-icons li:nth-child(4) a:hover {
+            background: #0077b5;
+        }
+        ul.social-icons li:nth-child(4) a:hover .fa-linkedin {
+            color: #fff;
+        }
+
+        .copyright-info {
+            text-align: center;
+            color: white;
+            background-color: #1a1717;
+            padding: 0.6rem 0;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .footer-column {
+                margin: 0.4rem 0;
+                width: 100%;
+                padding: 0;
+            }
+
+            .footer-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            h4 {
+                font-size: 1.3125rem;
+            }
+
+            p {
+                font-size: 0.9375rem;
+            }
+
+            ul li a {
+                font-size: 0.9375rem;
+            }
+
+            ul.social-icons li a {
+                width: 1.975rem;
+                height: 1.975rem;
+            }
+        }
+    </style>
+</head>
+<header class="hero">
+    <!-- Background video -->
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="../images/video.mp4" type="video/mp4">
+    </video>
+    <!-- Nav bar -->
+    <nav>
+        <!-- Website logo -->
+        <img src="../images/gobazzar-logo.png" alt="website logo" width="160px" style="border-radius:10px;">
+        <ul style="margin-top: 10px;">
+            <!-- Navigation links -->
+            <li><a href="#">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="heads">
+        <!-- Heading -->
+        <h1>Organic and Fresh 100%</h1>
+        <!-- Subheading -->
+        <p>Fresh Picks: Your One-Stop Grocery Destination!</p>
+        <!-- Shop now button -->
+        <a href="Products.html"><button id="shop-now">Explore now<i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
+    </div>
+</header>
+
+<h1 style="text-align: center; margin-top: 50px;">OUR EXCLUSIVE OFFER</h1>
+<div class="offer">
+    <!-- Offer container -->
+    <div class="offer-container">
+        <div class="offer-row"> 
+            <div class="offer-col">
+                <!-- Offer image -->
+                <img src="../images/feastables.png" alt="" class="offer-img"/>
+            </div>
+            <div class="offer-col">
+                <!-- Offer details -->
+                <h4>Exclusively Available on Go Bazaar</h4>
+                <h1>Feastable Chocolate Bar</h1>
+                <p>A nutritious snack packed with wholesome ingredients to satisfy your hunger and fuel your adventures. At only just Rs. 340</p>
+                <!-- Timer -->
+                <div id="timer"></div>
+                <br />
+                <!-- Buy Now button -->
+                <a href="#" class="btn" onclick="viewProduct('feastable')">Buy Now &#8594;</a>
+            </div>      
+    </div>
+</div>
+</div>  
+<div class="Deals">
+    <!-- Deals product heading -->
+    <div class="deals-prod">
+        <h1>DEALS MADE FOR YOU</h1>
+    </div>
+    <div class="deals-row">
+        <div class="deals-col">
+            <!-- Product image -->
+            <img src="/images/basmati.png" alt="">
+            <!-- Product name -->
+            <h4>Basmati Rice</h4>
+            <!-- Product price -->
+            <p>Rs.1000(10 KG)</p>
+            <!-- Button -->
+            <button class="deals-btn" onclick="alert('Added to cart! Thank you')">Add to Cart</button>
+        </div>
+        <div class="deals-col">
+            <!-- Product image -->
+            <img src="/images/dragon fruiy.png" alt="">
+            <!-- Product name -->
+            <h4>Dragon Fruit</h4>
+            <!-- Product price -->
+            <p>Rs.980(per KG)</p>
+            <!-- Button  -->
+            <button class="deals-btn" onclick="alert('Added to cart! Thank you')">Add to Cart</button>
+        </div>
+        <div class="deals-col">
+            <!-- Product image -->
+            <img src="/images/litchi.png" alt="">
+            <!-- Product name -->
+            <h4>Litchi</h4>
+            <!-- Product price -->
+            <p>Rs.700(per KG)</p>
+            <!-- Button -->
+            <button class="deals-btn" onclick="alert('Added to cart! Thank you')">Add to Cart</button>
+        </div>
+        <div class="deals-col">
+            <!-- Product image -->
+            <img src="/images/amul.png" alt="">
+            <!-- Product name -->
+            <h4>Amul Butter</h4>
+            <!-- Product price -->
+            <p>Rs.150</p>
+            <!-- Button  -->
+            <button class="deals-btn" onclick="alert('Added to cart! Thank you')">Add to Cart</button>
+        </div>
+        <div class="deals-col">
+            <!-- Product image -->
+            <img src="/images/soysauce.png" alt="">
+            <!-- Product name -->
+            <h4>Soy Sauce</h4>
+            <!-- Product price -->
+            <p>Rs.400</p>
+            <!-- Button -->
+            <button class="deals-btn" onclick="alert('Added to cart! Thank you')">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<section id="main-product">
+    <div class="product-heading">
+        <!-- Title for the products -->
+        <h3>POPULAR PRODUCTS</h3>
+    </div>
+    <div class="product-container">
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="jackfruit" src="/images/jackfruit.png">
+            <!-- Product name -->
+            <strong>Durian</strong>
+            <!-- Ouantity of product -->
+            <span class="quantity"> 1 KG</span>
+            <!-- price of product -->
+            <span class="price">Rs.300</span>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('jackfruit')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Dragon Fruit" src="/images/dragon fruit.png">
+            <!-- Product name -->
+            <strong>Dragon Fruit</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 KG</p>
+            <!-- price of product -->
+            <p id="p2">Rs. 980</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('dragonfruit')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="cabbage" src="/images/cabbage.png">
+            <!-- Product name -->
+            <strong>Cabbage</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 KG</p>
+            <!-- price of product -->
+            <p id="p2">Rs. 40</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('cabbage')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Avocado" src="/images/avocado.png">
+            <!-- Product name -->
+            <strong>Avocado</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 KG</p>
+            <!-- price of product -->
+            <p id="p2">Rs.300</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('avocado')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Kiwi" src="/images/kiwi.png">
+            <!-- Product name -->
+            <strong>Kiwi</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 KG</p>
+            <!-- price of product -->
+            <p id="p2">Rs.550</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('kiwi')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Broccoli" src="/images/brocolli.png">
+            <!-- Product name -->
+            <strong>Broccoli</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 KG</p>
+            <!-- price of product -->
+            <p id="p2">Rs.200</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('broccoli')">
+                View
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="main-product">
+    <!-- Product heading -->
+    <div class="product-heading">
+        <!-- Product Title -->
+        <h3>PRODUCTS FROM OVERSEAS</h3>
+    </div>
+    <div class="product-container">
+        <!-- Product box: Doritos -->
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Doritos Nacho cheese" src="/images/doritos.png">
+            <!-- Product name -->
+            <strong>Doritos Nacho cheese</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 packet</p>
+            <!-- price of product -->
+            <p id="p2">$1.79(Rs.240)</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('doritos')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Cheetos" src="/images/cheetos.png">
+            <!-- Product name -->
+            <strong>Cheetos</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 packet</p>
+            <!-- price of product -->
+            <p id="p2">$3.50(RS.460)</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('cheetos')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Strawberry" src="/images/strawberry.png">
+            <!-- Product name -->
+            <strong>Strawberry</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">1 KG</p>
+            <!-- price of product -->
+            <p id="p2">Rs. 800</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('strawberry')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Honey" src="/images/honey.png">
+            <!-- Product name -->
+            <strong>Australian Honey</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">350 ml</p>
+            <!-- price of product -->
+            <p id="p2">Rs.1200</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('honey')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Organic Rice vinegar" src="/images/vinegar.png">
+            <!-- Product name -->
+            <strong>Organic Rice vinegar</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">355 ml</p>
+            <!-- price of product -->
+            <p id="p2">Rs.350</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('vinegar')">
+                View
+            </button>
+        </div>
+        <div class="product-box">
+            <!-- Product image -->
+            <img alt="Reaper Hot sauce" src="/images/hotsauce.png">
+            <!-- Product name -->
+            <strong>Reaper Hot sauce</strong>
+            <!-- Ouantity of product -->
+            <p id="p1">147 ml</p>
+            <!-- price of product -->
+            <p id="p2">Rs.1400</p>
+            <!-- Button to view product -->
+            <button class="cart-btn" onclick="viewProduct('hotsauce')">
+                View
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews section -->
+<div class="reviews">
+    <div class="review-container">
+        <h1>OUR CLIENTS</h1>
+        <div class="review-row">
+            <div class="review-col">
+                <!-- Client photo -->
+                <img src="/images/testimonials/Customer1.jpg" alt="" />
+                <!-- Client fullname -->
+                <h3>Lily Johnson</h3>
+                <!-- Client's rating with font-awesome icocs -->
+                <div class="rating">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-regular fa-face-meh"></i>
+                </div>
+                <!-- A word from our client-->
+                <p>I recently started using Go Bazaar and I'm thoroughly impressed. From the moment I landed on their website, I was greeted with a user-friendly interface that made browsing and finding products a breeze.</p>
+            </div>
+            <div class="review-col">
+                <!-- Client photo -->
+                <img src="/images/testimonials/Customer2.png" alt="MrBeast" />
+                <!-- Client's fullname -->
+                <h3>MrBeast</h3>
+                <!-- Client's rating with font-awesome icocs -->
+                <div class="rating">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-regular fa-face-meh"></i>
+                </div>
+                <!-- A word from our client-->
+                <p>I've been shopping at Go Bazaar for a while now, and I have to say, it's become my favorite online grocery store. What sets them apart is not just their extensive selection of products but also their exceptional service.</p>
+            </div>
+            <!-- Third review column -->
+            <div class="review-col">
+                <!-- Client image -->
+                <img src="/images/steph.jpeg" alt="" />
+                <!-- Client's fullname -->
+                <h3>Steph Curry</h3>
+                <!-- Client's rating with font-awesome icocs -->
+                <div class="rating">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+                <!-- A word from our client -->
+                <p>I've recently discovered Go Bazaar, and it's completely changed the way I shop for groceries online. When I signed up, I've been impressed with their service. Whether I'm looking for everyday essentials, Go Bazaar has it all.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Partners section
+<section class="partners-part">
+    <h1>Our Peers</h1>
+    <div class="peers">
+        <div class="peers-col">
+            
+            <a href="https://open.spotify.com/"><i class="fa-brands fa-spotify fa-2xl" style="color:#1ED760;"></i></a>
+            <h4>Spotify</h4>
+        </div>
+        <div class="peers-col">
+           
+            <a href="https://www.apple.com/"><i class="fa-brands fa-apple fa-2xl" style="color: #A2AAAD;"></i></a>
+            <h4>Apple</h4>
+        </div>
+        <div class="peers-col">
+            
+            <a href="https://store.steampowered.com/"><i class="fa-brands fa-steam fa-2xl"></i></a>
+            <h4>Steam</h4>
+        </div>
+        <div class="peers-col">
+            
+            <a href="https://www.amazon.com/"><i class="fa-brands fa-amazon fa-2xl" style="color: #000000;"></i></a>
+            <h4>Amazon</h4>
+        </div>
+        <div class="peers-col">
+            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #075e54;"></i></a>
+            <h4>Whatsapp</h4>
+        </div>
+    </div>
+</section> -->
+
+<!-- Footer section -->
+<footer>
+    <!-- Footer row  -->
+    <div class="footer-row">
+        <!-- Column for navlinks -->
+        <div class="footer-column">
+            <h4>Navigate</h4>
+            <!-- List of ul nav links -->
+            <ul>  
+                <li>
+                    <!-- Navi link for Products -->
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <!-- Navi link for Products -->
+                    <a href="Products.html">Products</a>
+                </li>
+                <li>
+                    <!-- Nav link for About us -->
+                    <a href="aboutus.html">About us</a>
+                </li>
+                <li>
+                    <!-- Nav link for Research -->
+                    <a href="research.html">Research</a>
+                </li>
+                <li>
+                    <!-- Nav link for Blog -->
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <!-- Nav link for Contact Us -->
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Column  social media links -->
+        <div class="footer-column">
+            <h4>Follow us on</h4>
+            <!-- List of ul social media icons -->
+            <ul class="social-icons">
+                <li>
+                    <!--  link for Facebook -->
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <!--  link for Instagram -->
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- link for Youtube -->
+                    <a href="https://www.github.com/">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <!--  link for linkIn -->
+                    <a href="https://www.linkedin.com/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Column for company information -->
+        <div class="footer-column">
+            <!-- Title for company information -->
+            <h4>About Us</h4>
+            <!-- Description about the company -->
+            <p>Welcome to Go Bazzar, your fun, inexpensive, and handy grocery store. We streamline your shopping experience by providing a large selection of fresh vegetables, pantry essentials, and specialized items. </p>
+        </div>
+    </div>
+    <hr>
+    <!-- Copyright notice tag -->
+    <p class="copyright-info">© 2024 Go Bazzar. All rights reserved</p>
+</footer>
+<script>
+    function startTimer(duration, display) {
+      var timer = duration, hours, minutes, seconds;
+      setInterval(function () {
+        hours = parseInt(timer / 3600, 10);
+        minutes = parseInt((timer % 3600) / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+ 
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+ 
+        display.textContent = "SALE ENDS IN " + hours + ":" + minutes + ":" + seconds;
+ 
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
+ 
+    window.onload = function () {
+      var thirtyHours = 30 * 60 * 60;
+      var display = document.querySelector('#timer');
+      startTimer(thirtyHours, display);
+    };
+ 
+    function viewProduct(productName) {
+      // Redirect to a new page with the selected product
+      window.location.href = "productdesc.html?product=" + encodeURIComponent(productName);
+    }
+</script>
+</body>
+</html>

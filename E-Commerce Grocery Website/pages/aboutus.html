@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bardan,Paurakh,Aaseaan" />
+    <meta
+      name="description"
+      content="Fresh produce, pantry staples, and more. Shop now for convenient online grocery service."
+    />
+    <title>About</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+        font-family: "roboto";
+      }
+
+      .about-container {
+        width: 90%;
+        margin-left: 7vh;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: 15px;
+      }
+      .col {
+        flex: 1 0 0%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .justify-content-end {
+        display: ruby;
+      }
+
+      .align-items-center {
+        align-items: center;
+      }
+
+      .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .heading {
+        margin: 0;
+        font-size: 32px;
+      }
+
+      .description {
+        padding: 34px 0px;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+      }
+
+      .about-section {
+        padding: 52px 0;
+        background-color: #e0efff;
+        border-radius: 20px;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .team-section {
+        padding: 50px 0;
+      }
+
+      .team-members {
+        padding-bottom: 0;
+        display: flex;
+      }
+
+      .team-member {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0 0 19px rgba(0, 0, 0, 0.13);
+        border-radius: 12px;
+        padding: 5px 8px;
+        flex: 0 0 calc(50% - 12px);
+        margin-bottom: 24px;
+        width: 85%;
+        margin-left: 12px;
+      }
+
+      .team-member-img {
+        width: 27%;
+        height: 85%;
+        border-radius: 50%;
+      }
+
+      .team-member-info {
+        padding-left: 6px;
+        text-align: center;
+      }
+
+      .name {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .role {
+        font-size: 14px;
+        padding-top: 4px;
+        text-align: left;
+      }
+
+      .team-img {
+        width: 102%;
+        height: 50vh;
+        border-radius: 16px;
+      }
+
+      @media (max-width: 992px) {
+        .row {
+          flex-direction: column;
+        }
+
+        .col-lg-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .col-md-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .team-member {
+          flex: 0 0 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header Section hero -->
+      <header class="hero">
+        <!-- Nav Bar -->
+        <nav>
+          <!-- Website Logo -->
+          <img
+            src="/images/gobazzar-logo.png"
+            alt="website logo"
+            width="180px"
+            style="border-radius: 10px"
+          />
+          <ul style="margin-top: 10px">
+            <!-- All Navigate Links -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <hr />
+    <div class="about-container">
+      <div class="row">
+        <div class="col" id="col-id">
+          <div class="row about-section">
+            <div class="col text-center">
+              <h1 class="heading">About Us</h1>
+              <div class="description">
+                Welcome to Go Bazzar, your one-stop shop for all your grocery
+                needs. <br />We offer a wide range of high-quality products,
+                from fresh fruits and vegetables to beverages, meats, and
+                sauces. <br />Our mission is to provide a convenient shopping
+                experience with items sourced from trusted suppliers, ensuring
+                top-notch quality and freshness
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <div class="row justify-content-end align-items-center">
+          <div class="col-lg-6">
+            <h1 class="heading">Team</h1>
+            <div class="description">
+              We've lived your pain. We've spent years making customer calls
+              ourselves. We think you deserve better software.
+            </div>
+            <div class="row team-members">
+              <a href="#">
+                <div class="col-md-6">
+                  <div class="team-member">
+                    <img
+                      src="/images/Bardan's Photo.jpeg"
+                      alt="Team Member"
+                      class="team-member-img"
+                    />
+                    <div class="team-member-info">
+                      <div class="name">Bardan Gurung</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="col-md-6">
+                  <div class="team-member">
+                    <img
+                      src="/images/paurakh.jpeg"
+                      alt="Team Member"
+                      class="team-member-img"
+                    />
+                    <div class="team-member-info">
+                      <div class="name">Paurakh Pyakurel</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="row team-members">
+              <a href="#">
+                <div class="col-md-6">
+                  <div class="team-member">
+                    <img
+                      src="/images/aassean.jpg"
+                      alt="Team Member"
+                      class="team-member-img"
+                    />
+                    <div class="team-member-info">
+                      <div class="name">Aaseaan Siwakoti</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="/images/team.jpeg" alt="Team Image" class="team-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- Footer section -->
+    <footer>
+      <!-- Footer row  -->
+      <div class="footer-row">
+        <!-- Column for navlinks -->
+        <div class="footer-column">
+          <h4>Navigate</h4>
+          <!-- List of ul nav links -->
+          <ul>
+            <li>
+              <!-- Navi link for Products -->
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <!-- Navi link for Products -->
+              <a href="Products.html">Products</a>
+            </li>
+            <li>
+              <!-- Nav link for About us -->
+              <a href="aboutus.html">About us</a>
+            </li>
+            <li>
+              <!-- Nav link for Research -->
+              <a href="research.html">Research</a>
+            </li>
+            <li>
+              <!-- Nav link for Blog -->
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <!-- Nav link for Contact Us -->
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column  social media links -->
+        <div class="footer-column">
+          <h4>Follow us on</h4>
+          <!-- List of ul social media icons -->
+          <ul class="social-icons">
+            <li>
+              <!--  link for Facebook -->
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <!--  link for Instagram -->
+              <a href="https://www.instagram.com/accounts/login/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <!-- link for Youtube -->
+              <a href="https://www.youtube.com/">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <!--  link for LinkedIn -->
+              <a href="https://www.linkedin.com/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column for company information -->
+        <div class="footer-column">
+          <!-- Title for company information -->
+          <h4>About Us</h4>
+          <!-- Description about the company -->
+          <p>
+            Welcome to Go Bazzar, your fun, inexpensive, and handy grocery
+            store. We streamline your shopping experience by providing a large
+            selection of fresh vegetables, pantry essentials, and specialized
+            items.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <!-- Copyright notice tag -->
+      <p class="copyright-info">© 2024 Go Bazzar. All rights reserved</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bardan,Paurakh,Aaseaan" />
+    <meta
+      name="description"
+      content="Fresh produce, pantry staples, and more. Shop now for convenient online grocery service."
+    />
+    <title>Products</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="images/logos.png" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Jacquard+12+Charted&family=Jacquard+24&family=Kaushan+Script&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "roboto";
+      }
+      h3 {
+        font-size: 25px;
+      }
+      #slider-image img {
+        width: 121vh;
+        height: 43vh;
+        margin-left: 44vh;
+        border-radius: 20px;
+      }
+      /* products starts from here */
+
+      #products {
+        margin: 45px auto;
+        max-width: 960px;
+      }
+      #products h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+      }
+      #p0 {
+        font-family: "Kaushan Script", cursive;
+      }
+      .item-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        margin: 40px 0px;
+      }
+      .product-shell {
+        width: 100%;
+        border: 1px solid #eeeeee;
+        border-radius: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+      .product-shell img {
+        width: 90%;
+        height: 180px;
+        object-fit: contain;
+        object-position: center;
+        margin: auto;
+      }
+
+      .product-shell strong {
+        color: #202020;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+      .product-shell #p1 {
+        color: #949494;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .product-shell #p2 {
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #393939;
+      }
+      .product-shell .cart-btn {
+        width: 100%;
+        height: 40px;
+        background-color: #0d11f9;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        transition: all ease 0.3s;
+        border: none;
+        border-radius: 7px;
+        font-size: 18px;
+      }
+      .product-shell .cart-btn i {
+        margin-right: 10px;
+      }
+      .product-shell .cart-btn:hover {
+        background-color: #0c22b6;
+        color: #ffffff;
+        transition: all ease 0.3s;
+      }
+      footer {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section hero -->
+      <header class="hero">
+        <!-- Nav Bar -->
+        <nav>
+          <!-- Website Logo -->
+          <img
+            src="/images/gobazzar-logo.png"
+            alt="website logo"
+            width="180px"
+            style="border-radius: 10px"
+          />
+          <ul style="margin-top: 10px">
+            <!-- All Navigate Links -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <hr />
+    <!-- <div id="slider-image">
+      <img alt="Slider Image" src="/images/slider3.jpeg" />
+    </div> -->
+    <section id="products">
+      <h1 id="p0">WELCOME TO GO BAZZAR! Find Your Favorites Here</h1>
+      <h1>ALL PRODUCTS</h1>
+      <!--heading----------->
+      <div class="item-heading">
+        <h3>Fruits and Veggies</h3>
+      </div>
+      <!--item-container------>
+      <div class="item-container">
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="cauli" src="/images/cauli.png" />
+          <strong>Cauliflower</strong>
+          <p id="p1">Per 1 KG</p>
+          <p id="p2">Rs.100</p>
+          <!--cart-btn------->
+          <button class="cart-btn" onclick="viewProduct('cauliflower')">
+            View
+          </button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Chilli" src="/images/chili.png" />
+          <strong>Red Chili</strong>
+          <p id="p1">Per 1 KG</p>
+          <p id="p2">Rs.200</p>
+          <!--cart-btn------->
+          <button class="cart-btn" onclick="viewProduct('chili')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Lady finger" src="/images/lady finger.png" />
+          <strong>Lady finger</strong>
+          <p id="p1">Per 1 KG</p>
+          <p id="p2">Rs.70</p>
+          <!--cart-btn------->
+          <button class="cart-btn" onclick="viewProduct('lady-finger')">
+            View
+          </button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Potato" src="/images/potato.png" />
+          <strong>Potato</strong>
+          <p id="p1">Per 1 KG</p>
+          <p id="p2">Rs.60</p>
+          <!--cart-btn------->
+          <button class="cart-btn" onclick="viewProduct('potato')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Apple" src="/images/apple.png" />
+          <strong>Apple</strong>
+          <p id="p1">Per 1 KG</p>
+          <p id="p2">Rs.320</p>
+          <!--cart-btn------->
+          <button class="cart-btn" onclick="viewProduct('apple')">View</button>
+        </div>
+        <div class="product-shell">
+          <img alt="Tomato" src="/images/tomato.png" />
+          <strong>Tomato</strong>
+          <p id="p1">Per 1 KG</p>
+          <p id="p2">Rs.50</p>
+          <button class="cart-btn" onclick="viewProduct('tomato')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="carrots" src="/images/carrots.png" />
+          <strong>Carrots</strong>
+          <p id="p1">1 KG</p>
+          <p id="p2">Rs.80</p>
+          <button class="cart-btn" onclick="viewProduct('carrots')">
+            View
+          </button>
+        </div>
+        <div class="product-shell">
+          <img alt="cabbage" src="/images/cabbage.png" />
+          <strong>Cabbage</strong>
+          <p id="p1">1 KG</p>
+          <p id="p2">Rs.50</p>
+          <button class="cart-btn" onclick="viewProduct('cabbage')">
+            View
+          </button>
+        </div>
+        <div class="product-shell">
+          <img alt="mango" src="/images/mango.png" />
+          <strong>Mango</strong>
+          <p id="p1">1 KG</p>
+          <p id="p2">Rs.150</p>
+          <button class="cart-btn" onclick="viewProduct('mango')">View</button>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <!--heading----------->
+      <div class="item-heading">
+        <h3>Beverages</h3>
+      </div>
+      <!--box-container------>
+      <div class="item-container">
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Coke" src="/images/coke.png" />
+          <strong> Coke</strong>
+          <p id="p1">355 ml</p>
+          <p id="p2">Rs.200</p>
+          <button class="cart-btn" onclick="viewProduct('coke')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Redbull" src="/images/redbull.png" />
+          <strong>Redbull</strong>
+          <p id="p1">250 ml</p>
+          <p id="p2">Rs.280</p>
+          <button class="cart-btn" onclick="viewProduct('redbull')">
+            View
+          </button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="drpepper" src="/images/dr.pepper.png" />
+          <strong>Dr pepper</strong>
+          <p id="p1">355 ml</p>
+          <p id="p2">Rs.400</p>
+          <button class="cart-btn" onclick="viewProduct('drpepper')">
+            View
+          </button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Gatorade" src="/images/gatorade.png" />
+          <strong>Gatorade</strong>
+          <p id="p1">591 ml</p>
+          <p id="p2">Rs.200</p>
+          <button class="cart-btn" onclick="viewProduct('gatorade')">
+            View
+          </button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="Prime" src="/images/prime.png" />
+          <strong>Prime</strong>
+          <p id="p1">500 ml</p>
+          <p id="p2">Rs.300</p>
+          <button class="cart-btn" onclick="viewProduct('prime')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="powerade" src="/images/powerade.png" />
+          <strong>Powerade</strong>
+          <p id="p1">591 ml</p>
+          <p id="p2">Rs.230</p>
+          <button class="cart-btn" onclick="viewProduct('powerade')">
+            View
+          </button>
+        </div>
+        <div class="product-shell">
+          <img alt="apple cider" src="/images/apple cider.png" />
+          <strong>Apple cider juice</strong>
+          <p id="p1">250 ml</p>
+          <p id="p2">Rs.200</p>
+          <button class="cart-btn" onclick="viewProduct('apple cider')">
+            View
+          </button>
+        </div>
+        <div class="product-shell">
+          <img alt="soju" src="/images/soju.png" />
+          <strong>Korean Soju</strong>
+          <p id="p1">300 ml</p>
+          <p id="p2">Rs.170</p>
+          <button class="cart-btn" onclick="viewProduct('soju')">View</button>
+        </div>
+        <div class="product-shell">
+          <img alt="Coolberg Hawaii" src="/images/coolberg.png" />
+          <strong>Coolberg Hawaii</strong>
+          <p id="p1">330 ml</p>
+          <p id="p2">Rs. 185</p>
+          <button class="cart-btn" onclick="viewProduct('coolberg')">
+            View
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <!--heading----------->
+      <div class="item-heading">
+        <h3>Sauce items</h3>
+      </div>
+      <!--box-container------>
+      <div class="item-container">
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="jam" src="/images/jam.png" />
+          <strong> Strawberry jam</strong>
+          <p id="p1">340 g</p>
+          <p id="p2">Rs195</p>
+          <button class="cart-btn" onclick="viewProduct('jam')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="ketchup" src="/images/ketchup.png" />
+          <strong>Tomato Ketchup</strong>
+          <p id="p1">397 ml</p>
+          <p id="p2">Rs.250</p>
+          <button class="cart-btn" onclick="viewProduct('ketchup')">
+            View
+          </button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="mayo" src="/images/mayo.png" />
+          <strong>Mayonnaise</strong>
+          <p id="p1">295 ml</p>
+          <p id="p2">Rs.365</p>
+          <button class="cart-btn" onclick="viewProduct('mayo')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="ranch" src="/images/ranch.png" />
+          <strong>Ranch</strong>
+          <p id="p1">267 ml</p>
+          <p id="p2">Rs.530</p>
+          <button class="cart-btn" onclick="viewProduct('ranch')">View</button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="tobasco" src="/images/tobasco.png" />
+          <strong>Tobasco Hot Sauce</strong>
+          <p id="p1">60 ml</p>
+          <p id="p2">Rs.400</p>
+          <button class="cart-btn" onclick="viewProduct('tobasco')">
+            View
+          </button>
+        </div>
+        <!--box---------->
+        <div class="product-shell">
+          <img alt="soysauce" src="/images/soysauce.png" />
+          <strong>Soysauce</strong>
+          <p id="p1">150 ml</p>
+          <p id="p2">Rs.400</p>
+          <button class="cart-btn" onclick="viewProduct('soysauce')">
+            View
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- Footer row  -->
+      <div class="footer-row">
+        <!-- Column for navlinks -->
+        <div class="footer-column">
+          <h4>Navigate</h4>
+          <!-- List of ul nav links -->
+          <ul>
+            <li>
+              <!-- Navi link for Products -->
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <!-- Navi link for Products -->
+              <a href="Products.html">Products</a>
+            </li>
+            <li>
+              <!-- Nav link for About us -->
+              <a href="aboutus.html">About us</a>
+            </li>
+            <li>
+              <!-- Nav link for Research -->
+              <a href="research.html">Research</a>
+            </li>
+            <li>
+              <!-- Nav link for Blog -->
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <!-- Nav link for Contact Us -->
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column  social media links -->
+        <div class="footer-column">
+          <h4>Follow us on</h4>
+          <!-- List of ul social media icons -->
+          <ul class="social-icons">
+            <li>
+              <!--  link for Facebook -->
+              <a href="#=https://www.facebook.com/" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <!--  link for Instagram -->
+              <a
+                href="https://www.instagram.com/accounts/login/"
+                title="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <!-- link for Youtube -->
+              <a href="https://www.youtube.com/" title="Youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <!--  link for LinkedIn -->
+              <a href="https://www.linkedin.com/" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column for company information -->
+        <div class="footer-column">
+          <!-- Title for company information -->
+          <h4>About Us</h4>
+          <!-- Description about the company -->
+          <p>
+            Welcome to Go Bazzar, your fun, inexpensive, and handy grocery
+            store. We streamline your shopping experience by providing a large
+            selection of fresh vegetables, pantry essentials, and specialized
+            items.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <!-- Copyright notice tag -->
+      <p class="copyright-info">© 2024 Go Bazzar. All rights reserved</p>
+    </footer>
+    <script>
+      function viewProduct(productName) {
+        // Redirect to a new page with the selected product
+        window.location.href =
+          "productdesc.html?product=" + encodeURIComponent(productName);
+      }
+      var images = [
+        "/images/slider1.jpeg",
+        "/images/slider2.jpeg",
+        "/images/slider3.jpeg",
+      ];
+
+      var x = 0;
+      var imgs = document.getElementById("slider-image");
+      setInterval(slider, 2000);
+
+      function slider() {
+        if (x < images.length) {
+          x = x + 1;
+        } else {
+          x = 1;
+        }
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+      }
+    </script>
+  </body>
+</html>
