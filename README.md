@@ -2,7 +2,7 @@
 
 A modern grocery e-commerce website built with HTML, CSS, and JavaScript. Go Bazzar offers a seamless online shopping experience for fresh produce, beverages, meat items, and specialty products.
 
-**Notice**
+**Notice**:
 Due to file storage limitation, i couldn't upload the images folder in this repo, Thank You.
 
 ## 🌟 Features
