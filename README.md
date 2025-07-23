@@ -65,7 +65,7 @@ ECommerceGroceryWebsite/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/go-bazzar-grocery.git
+   git clone https://github.com/McFlurry/E-commerce-Grocery-Website.git
    cd go-bazzar-grocery
    ```
 
